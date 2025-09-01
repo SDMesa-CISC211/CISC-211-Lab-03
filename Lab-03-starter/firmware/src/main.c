@@ -265,6 +265,7 @@ int main ( void )
             snprintf((char*)uartTxBuffer, MAX_PRINT_LEN,
                     "========= Post-test Idle Cycle Number: %ld\r\n"
                     "Summary of tests: %ld of %ld tests passed\r\n"
+                    "FINI!!!!!\r\n"
                     "\r\n",
                     idleCount, totalPassCount, totalTests); 
 
