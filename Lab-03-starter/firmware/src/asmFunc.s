@@ -20,6 +20,10 @@ nameStrPtr: .word nameStr   /* Assign the mem loc of nameStr to nameSrPtr */
  
 /* Tell the assembler that what follows is in instruction memory    */
 .text
+/* TODO: For Spring '26, remove the .text directive and use the .section
+ * directive below to make sure that smFunc is located consistently
+ * regardless of MPLAB data packs and other config differences */
+/* .section lab5code,code,address(0x00002000) */
 .align
 
 /* Tell the assembler to allow both 16b and 32b extended Thumb instructions */
